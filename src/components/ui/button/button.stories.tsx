@@ -11,9 +11,6 @@ const meta = {
       options: ['primary', 'secondary', 'tertiary', 'link'],
       control: { type: 'radio' },
     },
-    // fullWidth: {
-    //   control: { type: 'boolean' },
-    // },
   },
 } satisfies Meta<typeof Button>
 
@@ -23,7 +20,7 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
   args: {
     variant: 'primary',
-    children: 'Primary Button',
+    children: 'Button primary',
     disabled: false,
   },
 }
@@ -31,21 +28,21 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
-    children: 'Secondary Button',
+    children: 'Button Secondary',
     disabled: false,
   },
 }
 export const Tertiary: Story = {
   args: {
     variant: 'tertiary',
-    children: 'Tertiary Button',
+    children: 'Tertiary',
     disabled: false,
   },
 }
 export const Link: Story = {
   args: {
     variant: 'link',
-    children: 'Tertiary Button',
+    children: 'Link-button',
     disabled: false,
   },
 }
