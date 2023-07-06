@@ -61,37 +61,5 @@ export const Checkbox: FC<CheckboxProps> = ({
         </Typography>
       </LabelRadix.Root>
     </div>
-
-    /*<div className={`${s.container} ${className || ''}`}>
-                                              <LabelRadix.Root asChild>
-                                                <Typography
-                                                  variant="body2"
-                                                  className={`${s.label} ${disabled ? s.disabled : ''}`}
-                                                  as={'label'}
-                                                >
-                                                  <div
-                                                    className={`${s.buttonWrapper} ${disabled ? s.disabled : ''} ${
-                                                      position === 'left' ? s.left : ''
-                                                    }`}
-                                                  >
-                                                    <CheckboxRadix.Root
-                                                      className={s.root}
-                                                      checked={checked}
-                                                      onCheckedChange={onChange}
-                                                      disabled={disabled}
-                                                      required={required}
-                                                      id={id}
-                                                    >
-                                                      {checked && (
-                                                        <CheckboxRadix.Indicator className={s.indicator} forceMount>
-                                                          <Check />
-                                                        </CheckboxRadix.Indicator>
-                                                      )}
-                                                    </CheckboxRadix.Root>
-                                                  </div>
-                                                  {label}
-                                                </Typography>
-                                              </LabelRadix.Root>
-                                            </div>*/
   )
 }
